@@ -1,0 +1,32 @@
+name: Build Aplikasi Saya
+
+# Kapan proses ini dijalankan? (Misal: saat diklik manual)
+on: 
+  workflow_dispatch:
+
+jobs:
+  build:
+    # 1. Siapkan komputer server Linux
+    runs-on: ubuntu-latest 
+
+    steps:
+      # 2. Ambil kodingan dari GitHub
+      - name: Ambil kodingan
+        uses: actions/checkout@v3
+
+      # 3. Install program yang dibutuhkan
+      - name: Install Java / Program Build
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+
+      # 4. Ubah kodingan jadi APK
+      - name: Build APK
+        run: ./gradlew assembleDebug
+
+      # 5. Simpan hasilnya agar bisa didownload
+      - name: Simpan APK
+        uses: actions/upload-artifact@v3
+        with:
+          name: Aplikasi-Android
+          path: app/build/outputs/apk/debug/app-debug.apk
