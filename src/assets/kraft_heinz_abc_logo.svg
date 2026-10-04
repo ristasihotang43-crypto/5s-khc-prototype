@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="100%" height="100%">
+  <!-- Definition of filters/gradients -->
+  <defs>
+    <!-- Top yellow sprout/leaf -->
+    <linearGradient id="sproutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDD00"/>
+      <stop offset="100%" stop-color="#F39C12"/>
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- ABC TOP CREST EMBLEM -->
+  <g transform="translate(0, -5)" filter="url(#subtleShadow)">
+    <!-- Yellow sprout top flare -->
+    <path d="M 250 20 C 248 38, 240 45, 235 52 C 245 48, 255 48, 265 52 C 260 45, 252 38, 250 20 Z" fill="#F4B400"/>
+    <path d="M 235 40 C 245 35, 255 35, 265 40 C 255 48, 245 48, 235 40 Z" fill="#F4B400"/>
+    <ellipse cx="250" cy="40" rx="18" ry="12" fill="none" stroke="#F4B400" stroke-width="4"/>
+
+    <!-- Gold/Yellow Outer Border for ABC Crest -->
+    <!-- 3-lobed scalloped cloud shape -->
+    <path d="M 250 8 C 285 8, 315 28, 325 58 C 348 70, 362 94, 362 120 C 362 152, 335 178, 300 182 C 285 194, 268 200, 250 200 C 232 200, 215 194, 200 182 C 165 178, 138 152, 138 120 C 138 94, 152 70, 175 58 C 185 28, 215 8, 250 8 Z" fill="#F9A825"/>
+
+    <!-- Inner Red ABC Background -->
+    <path d="M 250 16 C 280 16, 306 34, 316 61 C 338 72, 352 93, 352 118 C 352 145, 328 168, 298 173 C 284 184, 268 190, 250 190 C 232 190, 216 184, 202 173 C 172 168, 148 145, 148 118 C 148 93, 162 72, 184 61 C 194 34, 220 16, 250 16 Z" fill="#D32F2F"/>
+
+    <!-- Gold Accent Ring at top of ABC inside -->
+    <path d="M 235 34 Q 250 18 265 34 Q 250 48 235 34 Z" fill="#FBC02D"/>
+    <path d="M 250 20 Q 253 45 248 55 Q 247 45 250 20 Z" fill="#FBC02D"/>
+
+    <!-- ABC LETTERS -->
+    <!-- Letter A -->
+    <text x="215" y="148" font-family="'Times New Roman', Georgia, serif" font-weight="900" font-size="70" fill="#FFFFFF" text-anchor="middle" letter-spacing="-2">A</text>
+    <!-- Letter B -->
+    <text x="250" y="148" font-family="'Times New Roman', Georgia, serif" font-weight="900" font-size="70" fill="#FFFFFF" text-anchor="middle" letter-spacing="-2">B</text>
+    <!-- Letter C -->
+    <text x="286" y="148" font-family="'Times New Roman', Georgia, serif" font-weight="900" font-size="70" fill="#FFFFFF" text-anchor="middle" letter-spacing="-2">C</text>
+  </g>
+
+  <!-- BOTTOM TEXT: Kraft Heinz -->
+  <g transform="translate(0, 10)">
+    <!-- 'Kraft' in Deep Navy Heavy Sans -->
+    <text x="18" y="278" font-family="'Arial Black', 'Trebuchet MS', 'Impact', sans-serif" font-weight="900" font-size="82" fill="#0C3466" letter-spacing="-4">Kraft</text>
+
+    <!-- 'Heinz' in Red Calligraphic Bold Script -->
+    <text x="220" y="278" font-family="'Brush Script MT', 'Bickham Script Pro', 'Edwardian Script ITC', 'Lucida Calligraphy', cursive, serif" font-style="italic" font-weight="900" font-size="96" fill="#D8232A" letter-spacing="-1">Heinz</text>
+  </g>
+</svg>
